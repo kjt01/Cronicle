@@ -15,9 +15,15 @@ var installer_version = '1.3';
 var base_dir = '/opt/cronicle';
 var log_dir = base_dir + '/logs';
 var log_file = '';
+
+// Not used anywhere
 var gh_repo_url = 'http://github.com/kjt01/Cronicle';
+
+// Only used for logging
 var gh_releases_url = 'https://api.github.com/repos/kjt01/Cronicle/releases';
-var gh_head_tarball_url = 'https://github.com/kjt01/Cronicle/archive/master.tar.gz';
+
+// The actually file used for installation
+var gh_head_tarball_url = 'https://github.com/kjt01/Cronicle/archive/0.8.47.zip';
 
 // don't allow npm to delete these (ugh)
 var packages_to_check = ['couchbase', 'aws-sdk', 'redis'];
